@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="end"
+        android:textSize="32sp"
+        android:background="#eeeeee"
+        android:inputType="none"
+        android:focusable="false"
+        android:clickable="false"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
+    <GridLayout
+        android:id="@+id/gridButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <Button android:id="@+id/btn7" android:text="7" />
+        <Button android:id="@+id/btn8" android:text="8" />
+        <Button android:id="@+id/btn9" android:text="9" />
+        <Button android:id="@+id/btnDivide" android:text="/" />
+
+        <Button android:id="@+id/btn4" android:text="4" />
+        <Button android:id="@+id/btn5" android:text="5" />
+        <Button android:id="@+id/btn6" android:text="6" />
+        <Button android:id="@+id/btnMultiply" android:text="x" />
+
+        <Button android:id="@+id/btn1" android:text="1" />
+        <Button android:id="@+id/btn2" android:text="2" />
+        <Button android:id="@+id/btn3" android:text="3" />
+        <Button android:id="@+id/btnMinus" android:text="-" />
+
+        <Button android:id="@+id/btnDot" android:text="0" />
+        <Button android:id="@+id/btn0" android:text="." />
+        <Button android:id="@+id/btnClear" android:text="C" />
+        <Button android:id="@+id/btnPlus" android:text="+" />
+
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="fill"
+            android:text="="
+            android:textSize="12dp" />
+    </GridLayout>
+
+</LinearLayout>
